@@ -58,16 +58,6 @@ I²C Interface (Recommended for Kernel Driver)
 , then:
 ```lsmod | grep i2c```
 
-## Visual Pin Layout:
-- Raspberry Pi GPIO (40-pin header):
-┌──┬──┐
-│1 │2 │  (1=3.3V, 2=5V)
-├──┼──┤
-│3 │4 │  (3=SDA GPIO2, 4=5V)
-├──┼──┤
-│5 │6 │  (5=SCL GPIO3, 6=GND)
-└──┴──┘
-
 ## Executions
 1. Enable I²C on Raspberry Pi
 ```sudo raspi-config```
