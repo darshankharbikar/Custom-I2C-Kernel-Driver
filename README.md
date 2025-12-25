@@ -204,12 +204,13 @@ Functionality Test ✓
 ```cat /sys/bus/i2c/devices/1-0077/temp```
 - Returns ~2000000 (raw ADC, not 0 or error)
 - Multiple reads give consistent changing values
-- Troubleshooting Quick Checks
-❌ No 76/77? → Wiring/I2C enable
-❌ "Invalid chip ID"? → Wrong sensor or fake
-❌ Compile fail? → Missing headers  
-❌ Temp=0? → Check forced mode trigger
-❌ Permission denied? → `sudo chmod 644 /sys/.../temp`
+ 
+  Troubleshooting Quick Checks
+- No 76/77? → Wiring/I2C enable
+- "Invalid chip ID"? → Wrong sensor or fake
+- Compile fail? → Missing headers  
+- Temp=0? → Check forced mode trigger
+- Permission denied? → `sudo chmod 644 /sys/.../temp`
 
 Success Indicators
 ✓ i2cdetect:     76/77 detected
