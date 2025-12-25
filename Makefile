@@ -1,9 +1,9 @@
-obj-m += bme280.o
+obj-m += bme680_driver.o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 
 all:
-	$(MAKE) -C $(KDIR) M=$(PWD) modules
+	make -C $(KDIR) M=$(PWD) modules
 
 clean:
-	$(MAKE) -C $(KDIR) M=$(PWD) clean
+	make -C $(KDIR) M=$(PWD) clean
