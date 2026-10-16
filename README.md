@@ -270,16 +270,20 @@ clean:
 Compile:``` dtc -@ -I dts -O dtb -o bme680.dtbo bme680-overlay.dts```
 
 5. Sysfs Artifacts (Runtime)
+
+```
 /sys/bus/i2c/devices/1-0077/
 ├── temp              # Raw temperature ADC
 ├── uevent
 ├── subsystem
 └── power/
+```
+7. Log Outputs (Expected)
 
-6. Log Outputs (Expected)
+```
 dmesg:
 [  2.345678] bme680_custom 1-0077: BME680 detected, chip ID: 0x61
-
+```
 i2cdetect -y 1:
 <!--|   |  0|  1| 2| 3|  4|  5|  6|  7|  8|  9|  a|  b| c|  d|  e| f|
 |20:|   |   |  |--|-- |--| --| --| --| --| --| --| --| --| --| --| 
