@@ -23,12 +23,12 @@
 - Jumper Wires (4x female-to-female or male-to-female Dupont)
 - 3.3V Power Supply (RPi 3.3V GPIO pin)
 
-## Connections
-|BME680 |   →    Raspberry Pi GPIO|
-|VCC   |    →    Pin 1 (3.3V)|
-|GND  |    →    Pin 6 (GND)  |
-|SDA  |     →    Pin 3 (GPIO 2, I2C1 SDA)|
-|SCL |      →    Pin 5 (GPIO 3, I2C1 SCL)|
+| BME680 Pin | Raspberry Pi 4B Pin | Description |
+|---|---|---|
+| VCC | Pin 1 (3.3V) | Power supply |
+| GND | Pin 6 (GND) | Ground |
+| SDA | Pin 3 (GPIO 2) | I2C1 data |
+| SCL | Pin 5 (GPIO 3) | I2C1 clock |
 
 ## Optional Components
 - Pull-up Resistors (4.7kΩ on SDA/SCL) - usually built into BME680 breakout
