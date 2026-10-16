@@ -24,11 +24,11 @@
 - 3.3V Power Supply (RPi 3.3V GPIO pin)
 
 ## Connections
-BME680    →    Raspberry Pi GPIO
-VCC       →    Pin 1 (3.3V)
-GND       →    Pin 6 (GND)  
-SDA       →    Pin 3 (GPIO 2, I2C1 SDA)
-SCL       →    Pin 5 (GPIO 3, I2C1 SCL)
+|BME680 |   →    Raspberry Pi GPIO|
+|VCC   |    →    Pin 1 (3.3V)|
+|GND  |    →    Pin 6 (GND)  |
+|SDA  |     →    Pin 3 (GPIO 2, I2C1 SDA)|
+|SCL |      →    Pin 5 (GPIO 3, I2C1 SCL)|
 
 ## Optional Components
 - Pull-up Resistors (4.7kΩ on SDA/SCL) - usually built into BME680 breakout
